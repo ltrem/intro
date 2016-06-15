@@ -29,6 +29,7 @@ class DefaultController extends Controller
         $form = $this->createFormBuilder($patient)
             ->add('firstname', TextType::class)
             ->add('lastname', TextType::class)
+            ->add('anotherThing', TextType::class)
             ->add('save', SubmitType::class, array('label' => 'Create Patient'))
             ->getForm();
 
